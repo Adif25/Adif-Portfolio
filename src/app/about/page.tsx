@@ -121,20 +121,14 @@ export default function AboutPage() {
               className="relative aspect-square"
             >
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/20 via-accent-secondary/10 to-transparent" />
-              <div className="absolute inset-4 rounded-xl bg-card border border-border flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-accent to-accent-secondary flex items-center justify-center">
-                    <span className="text-5xl font-bold text-background">AH</span>
-                  </div>
-                  <h3 className="text-xl font-bold mb-2">Adif Hossain</h3>
-                  <p className="text-muted text-sm">
-                    University of Delaware
-                    <br />
-                    B.S. Computer Science
-                    <br />
-                    Class of 2029
-                  </p>
-                </div>
+              <div className="absolute inset-4 rounded-xl overflow-hidden border border-border">
+                <Image
+                  src="/profile.jpg"
+                  alt="Adif Hossain"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
               </div>
             </motion.div>
           </motion.div>
