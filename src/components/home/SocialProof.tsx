@@ -5,11 +5,32 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 
 const experiences = [
   {
+    company: "Peak Web Technologies",
+    role: "Founder & Software Developer",
+    period: "January 2026 – Present",
+    contribution:
+      "Founded a web design and custom software agency serving 20+ Delaware small businesses, delivering 50+ projects with a 5.0 Google rating",
+    learned: "Client relationships, custom CRMs, AI chatbots, and business automation",
+    logo: "PW",
+    color: "from-emerald-500",
+  },
+  {
+    company: "City of Wilmington",
+    role: "Human Resources Intern",
+    period: "June 2026 – August 2026",
+    contribution:
+      "Organized hundreds of personnel records into Excel trackers using Munis ERP, supporting the full hiring cycle",
+    learned: "Data integrity, applicant screening, and enterprise ERP systems",
+    logo: "CW",
+    color: "from-amber-500",
+  },
+  {
     company: "Code Differently",
     role: "Software Developer Intern",
     period: "June 2025 – August 2025",
-    contribution: "Built full-stack applications and mentored junior developers",
-    learned: "Collaborative development practices and agile methodologies",
+    contribution:
+      "Developed a web app making drone programming accessible through Python and taught it to first-time middle-school coders",
+    learned: "Collaborative development practices; earned IC3 Certification",
     logo: "CD",
     color: "from-blue-500",
   },
@@ -17,19 +38,11 @@ const experiences = [
     company: "Buccini Pollin Group",
     role: "IT Intern",
     period: "April 2024 – August 2024",
-    contribution: "Streamlined IT infrastructure and automated workflows",
+    contribution:
+      "Analyzed and modeled financial data for a commercial real estate property, building projections and cash-flow reports",
     learned: "Enterprise IT systems and stakeholder communication",
     logo: "BPG",
     color: "from-red-500",
-  },
-  {
-    company: "A.I Whoo",
-    role: "Research Assistant",
-    period: "March 2024 – May 2024",
-    contribution: "Researched AI applications and developed prototypes",
-    learned: "AI/ML fundamentals and research methodologies",
-    logo: "AI",
-    color: "from-purple-500",
   },
 ];
 
@@ -56,7 +69,7 @@ export default function SocialProof() {
         </motion.div>
 
         {/* Company Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {experiences.map((exp, index) => (
             <ExperienceCard
               key={exp.company}

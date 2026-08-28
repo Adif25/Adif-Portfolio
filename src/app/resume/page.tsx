@@ -25,7 +25,7 @@ export default function ResumePage() {
             <span className="gradient-text">ADIF HOSSAIN</span>
           </h1>
           <p className="text-muted text-lg mb-6">
-            Software Engineer · University of Delaware
+            Software Engineer · University of Delaware · Expected Graduation May 2028
           </p>
           <motion.a
             href="/resume.pdf"

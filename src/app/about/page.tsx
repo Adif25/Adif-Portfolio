@@ -87,8 +87,8 @@ export default function AboutPage() {
                 className="text-muted text-lg mb-8"
               >
                 I&apos;m <span className="text-foreground">Adif Hossain</span>, a Computer
-                Science student at the University of Delaware with a passion for building
-                software that brings people together. My approach combines technical
+                Science student at the University of Delaware (expected graduation May
+                2028) with a passion for building software that brings people together. My approach combines technical
                 excellence with deep understanding of human perspectives.
               </motion.p>
 
@@ -203,9 +203,10 @@ export default function AboutPage() {
               </p>
 
               <p>
-                At A.I Whoo, I dove deep into AI research, discovering how to translate
-                complex technical concepts into practical applications. This experience
-                taught me that innovation without communication is just noise.
+                That understanding led me to found Peak Web Technologies, a web design and
+                custom software agency serving 20+ Delaware small businesses. Building
+                websites, CRMs, and AI chatbot workflows for real clients taught me that
+                great software is measured by the problems it solves, not the code it ships.
               </p>
 
               <p>
@@ -244,15 +245,15 @@ export default function AboutPage() {
           >
             <SkillCategory
               title="Languages"
-              skills={["Python", "TypeScript", "JavaScript", "Java", "SQL", "HTML/CSS"]}
+              skills={["Python", "TypeScript", "JavaScript", "Java", "C++", "C#", "SQL", "HTML/CSS"]}
             />
             <SkillCategory
               title="Frameworks"
-              skills={["React", "Next.js", "Node.js", "Express", "TailwindCSS", "GSAP"]}
+              skills={["React", "React Native", "Next.js", "Node.js", "Express", "FastAPI", "TailwindCSS"]}
             />
             <SkillCategory
               title="Tools"
-              skills={["Git", "MongoDB", "PostgreSQL", "Docker", "AWS", "Figma"]}
+              skills={["Git", "AWS", "Supabase", "Redis", "Selenium", "Power BI", "n8n"]}
             />
           </motion.div>
         </div>
