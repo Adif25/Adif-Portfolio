@@ -3,8 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
-import CustomCursor from "@/components/ui/CustomCursor";
-import SmoothScroll from "@/components/providers/SmoothScroll";
 import FloatingShapes from "@/components/effects/FloatingShapes";
 
 const geistSans = localFont({
@@ -44,17 +42,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="lenis">
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <SmoothScroll>
-          <CustomCursor />
-          <FloatingShapes />
-          <Navigation />
-          <main>{children}</main>
-          <Footer />
-        </SmoothScroll>
+        <FloatingShapes />
+        <Navigation />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
